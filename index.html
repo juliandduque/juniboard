@@ -1,0 +1,53 @@
+
+<html>
+<head>
+    <title>Juniboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-sm-2"><a class="navbar-brand mt-0" href="#">Juniboard<hr class="mx-0 my-0">  </a></div>
+    </nav>
+
+    <div id="accessUIDiv">
+        <div class="container-fluid">
+            <div class="card center-block">
+                <div class="card-body row bg2">
+
+                    <div class="col-sm-3">
+                    </div>
+
+                    <div class="col-sm-6" style="background-color:white; ">
+                        <div id='buttons'>
+                            <div id='pic'></div>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('hiiiiiiiii.m4a')" value="hiiii"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('jeet.m4a')" value="Jeet"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('mmhmm.m4a')" value="mmhmm"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('oh yeah.m4a')" value="oh yeah"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('road trip.m4a')" value="road trip"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('this a recording I took of you laughing.m4a')" value="You laughing"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('what you said.m4a')" value="What you said"/>
+                            <input type="button" class="btn btn-secondary btn-lg" onclick="playSound('when you see jorge.m4a')" value="what you tell jorge"/>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function playSound(audioFile) {
+            var music = new Audio(audioFile);
+            music.play();
+        }
+    </script>
+
+</body>
+
+</html>
